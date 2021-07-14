@@ -1,0 +1,280 @@
+*,html,body{
+	margin: 0px;
+	padding: 0px;
+}
+
+:root{
+	--primaryCol: #FE336B;
+	--secondaryCol: #FF4A37;
+	--textCol: #5E5E5E;
+}
+
+header{
+	width: 90%;
+	height: 50px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;}
+header .logo{
+	height: 70%;
+	padding: 5px 0px;}
+header nav{
+	width: 100%;}
+nav ul{
+	padding: 35px;
+	list-style: none;}
+nav li{
+	display: inline-block;
+	margin: 0px 20px;
+	position: relative;}
+nav li a{
+	text-decoration: none;
+	font-family: "Brandon_regular", serif;
+	font-size: 18px;
+	color: #5E5E5E;}
+nav li:nth-child(4),
+nav li:nth-child(3){
+	float:right;
+	margin: 0px 0px 0px 30px;}
+nav li:nth-child(4){
+	border-right: solid 2px var(--primaryCol);
+	padding-right: 60px;}
+nav .nav_language:after{
+	position: absolute;
+	content: '/EN';
+	top: 0;
+	left: 24px;
+	display: block;
+  	position: absolute;
+  	opacity: .5;}
+.button1{
+	padding: 5px 20px;
+	position: relative;
+	width: 177px;
+	background-color: var(--primaryCol);
+	outline: none;
+	border: none;
+	font-family: "Brandon_bold", serif;
+	font-size: 18px;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 95px 0px 70px 0px;}
+.button2{
+	padding: 3px 20px;
+	width: 177px;
+	background-color: transparent;
+	outline: none;
+	border: solid 2px var(--primaryCol);
+	font-family: "Brandon_bold", serif;
+	font-size: 18px;
+	color: var(--textCol);
+	border-radius: 6px;
+	cursor: pointer;
+	margin-bottom: 110px;}
+header .button1{
+	margin-bottom: 0px;
+}
+.button1:hover:after{
+	width: 80%;
+	right: 0;
+}
+.button1:after{
+	content: '\f061';
+	position: absolute;
+	top: 0;
+	right: -50px;
+	width: 20%;
+	height: calc(100% - 4px);
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Font Awesome 5 Pro",serif;
+	font-size: 26px;
+	color: var(--textCol);
+	border: solid 2px var(--primaryCol);
+	border-radius: 6px;
+	transition: right 0.4s, width 0.6s;
+	transition-delay: 0s,2s;
+}
+.kaart2 a button{
+	background-color: var(--secondaryCol);
+}
+ .header_button{
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ }
+
+li:nth-child(1) a:after,
+li:nth-child(2) a:after,
+li:nth-child(3) a:after{
+  	content: "";
+  	display: block;
+  	height: 2px;
+  	left: 50%;
+  	position: absolute;
+  	background: var(--primaryCol);
+  	width: 0;
+  	transition: all .3s ease;}
+li:nth-child(1) a:hover:after,
+li:nth-child(2) a:hover:after,
+li:nth-child(3) a:hover:after{
+	width: 100%;
+	left: 0;}
+
+
+.section_waarom article:nth-child(1){
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column;
+	width: 100%;
+	background-color: transparent;}
+.section_waarom .article_kaarten{
+	width: 45%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow:row;
+	margin: 0px 0px 5% 0px;}
+.section_waarom article h1{
+	font-family: "Brandon_bold", serif;
+	font-size: 38px;
+	margin: 3% 0px 5% 0px;
+	color: var(--textCol);}
+.section_waarom article .kaart{
+	width: 400px;
+	height: 250px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: column;}
+.section_waarom article .kaart h5{
+	font-family: "Brandon_bold", serif;
+	font-size: 18px;
+	color: var(--primaryCol);}
+.section_waarom article .kaart p{
+	font-family: "Brandon_bold", serif;
+	font-size: 18px;
+	color: var(--primaryCol);}
+.section_waarom article .kaart p:before{
+	content: "\f0c5";
+	font-family: "Font Awesome 5 Pro",serif;
+	font-size: 26px;
+	padding: 0px 10px;
+	margin-right: 10px;
+	border-right: solid 3px var(--primaryCol);
+	cursor: pointer;}
+.section_waarom article .kaart i{
+	color: var(--primaryCol);}
+.section_waarom article .kaart:nth-child(2) h5,
+.section_waarom article .kaart:nth-child(2) i{
+	color: var(--secondaryCol);}
+.section_waarom article .kaart span{
+	text-align: center;
+	font-family: "Brandon_regular", serif;
+	font-size: 16px;}
+.section_waarom article i{
+	font-family: "Font Awesome 5 Pro", serif;
+	font-size: 35px;}
+
+.section_waarom article:nth-child(2){
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column;
+	width: 100%;
+	background: linear-gradient(70deg, var(--secondaryCol), var(--primaryCol), var(--secondaryCol), var(--primaryCol));
+	background-size: 400%}
+.section_waarom .samenwerking4 {
+	font-family: "Brandon_light", serif;
+	font-size: 18px;
+	color: white;
+	margin-bottom: 60px;}
+.section_waarom .samenwerking3{
+	font-family: "Brandon_bold", serif;
+	font-size: 38px;
+	margin: 3% 0px 40px 0px;
+	color: white;}
+.section_waarom article form{
+	width: 55%;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: column;}
+.section_waarom article form .text{
+	padding: 0px 10px;
+	max-width: 280px;
+	width: 20%;
+	min-width: 150px;
+	background-color: white;
+	outline: none;
+	border: none;
+	font-family: "Brandon_bold", serif;
+	font-size: 18px;
+	color: var(--textCol);
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row;}
+.section_waarom article form .text i{
+	padding-right: 10px;
+	border-right: solid 3px var(--primaryCol);
+	margin-right: 10px;
+	font-size: 22px;}
+.section_waarom article form .text input[type="text"]{
+	padding: 10px 10px;
+	width: 90%;
+	min-width: 100px;
+	max-width: 350px;
+	height: 20px;
+	outline: none;
+	border: none;
+	border-left: solid 2px var(--primaryCol);
+	font-family: "Brandon_regular", serif;
+	font-size: 16px;}
+.section_waarom article form input[type="checkbox"]{
+	height: 16px;
+	width: 16px;
+	border: none;
+	outline: none;
+	margin-right:10px; }
+.section_waarom article form input[type="submit"]{
+	padding: 7px 10px;
+	width: 280px;
+	background-color: white;
+	outline: none;
+	border: none;
+	font-family: "Brandon_bold", serif;
+	font-size: 18px;
+	color: var(--textCol);
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row;
+	cursor: pointer;
+	margin-top: 40px;}
+.section_waarom article form label, .section_waarom article form label a{
+	width: 230px;
+	font-family: "Brandon_regular", serif;
+	font-size: 16px;
+	color: white;}
+.section_waarom article form .border-checkbox{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 200px;
+	margin-bottom: 110px;}
+
+.section_waarom article form input[type="submit"]:hover{
+	color: var(--primaryCol);
+}
